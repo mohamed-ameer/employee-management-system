@@ -1,0 +1,560 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6",
+		"name": "Employee Management System API",
+		"description": "Collection of API endpoints for the Employee Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000/api",
+			"type": "string"
+		}
+	],
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"admin@example.com\",\n    \"password\": \"admin123\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/users/login/",
+							"host": ["{{base_url}}"],
+							"path": ["users", "login"]
+						}
+					}
+				},
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"user@example.com\",\n    \"password\": \"user123\",\n    \"first_name\": \"John\",\n    \"last_name\": \"Doe\",\n    \"role\": \"employee\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/users/register/",
+							"host": ["{{base_url}}"],
+							"path": ["users", "register"]
+						}
+					}
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refresh\": \"your-refresh-token-here\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/users/login/refresh/",
+							"host": ["{{base_url}}"],
+							"path": ["users", "login", "refresh"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "User Management",
+			"item": [
+				{
+					"name": "Get User Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/users/profile/",
+							"host": ["{{base_url}}"],
+							"path": ["users", "profile"]
+						}
+					}
+				},
+				{
+					"name": "Update User Profile",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"Updated\",\n    \"last_name\": \"Name\",\n    \"email\": \"updated@example.com\",\n    \"password\": \"newpassword123\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/users/profile/update/",
+							"host": ["{{base_url}}"],
+							"path": ["users", "profile", "update"]
+						}
+					}
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/users/",
+							"host": ["{{base_url}}"],
+							"path": ["users"]
+						}
+					}
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/users/1/",
+							"host": ["{{base_url}}"],
+							"path": ["users", "1"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Companies",
+			"item": [
+				{
+					"name": "Get All Companies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/companies/",
+							"host": ["{{base_url}}"],
+							"path": ["companies"]
+						}
+					}
+				},
+				{
+					"name": "Get Company Details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/companies/1/",
+							"host": ["{{base_url}}"],
+							"path": ["companies", "1"]
+						}
+					}
+				},
+				{
+					"name": "Create Company",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Example Company\",\n    \"description\": \"A sample company\",\n    \"website\": \"https://example.com\",\n    \"address\": \"123 Main St, City, Country\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/companies/create/",
+							"host": ["{{base_url}}"],
+							"path": ["companies", "create"]
+						}
+					}
+				},
+				{
+					"name": "Update Company",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Updated Company Name\",\n    \"description\": \"Updated description\",\n    \"website\": \"https://updated-example.com\",\n    \"address\": \"456 New St, City, Country\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/companies/1/update/",
+							"host": ["{{base_url}}"],
+							"path": ["companies", "1", "update"]
+						}
+					}
+				},
+				{
+					"name": "Delete Company",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/companies/1/delete/",
+							"host": ["{{base_url}}"],
+							"path": ["companies", "1", "delete"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Departments",
+			"item": [
+				{
+					"name": "Get All Departments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/departments/",
+							"host": ["{{base_url}}"],
+							"path": ["departments"],
+							"query": [
+								{
+									"key": "company",
+									"value": "1",
+									"description": "Optional company filter",
+									"disabled": true
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Department Details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/departments/1/",
+							"host": ["{{base_url}}"],
+							"path": ["departments", "1"]
+						}
+					}
+				},
+				{
+					"name": "Create Department",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"HR Department\",\n    \"company\": 1,\n    \"manager\": 1,\n    \"description\": \"Human Resources Department\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/departments/create/",
+							"host": ["{{base_url}}"],
+							"path": ["departments", "create"]
+						}
+					}
+				},
+				{
+					"name": "Update Department",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Updated Department\",\n    \"company\": 1,\n    \"manager\": 2,\n    \"description\": \"Updated department description\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/departments/1/update/",
+							"host": ["{{base_url}}"],
+							"path": ["departments", "1", "update"]
+						}
+					}
+				},
+				{
+					"name": "Delete Department",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/departments/1/delete/",
+							"host": ["{{base_url}}"],
+							"path": ["departments", "1", "delete"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Employees",
+			"item": [
+				{
+					"name": "Get All Employees",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/employees/",
+							"host": ["{{base_url}}"],
+							"path": ["employees"],
+							"query": [
+								{
+									"key": "company",
+									"value": "1",
+									"description": "Filter by company",
+									"disabled": true
+								},
+								{
+									"key": "department",
+									"value": "1",
+									"description": "Filter by department",
+									"disabled": true
+								},
+								{
+									"key": "workflow_state",
+									"value": "hired",
+									"description": "Filter by workflow state",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "active",
+									"description": "Filter by status",
+									"disabled": true
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Employee Details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/employees/1/",
+							"host": ["{{base_url}}"],
+							"path": ["employees", "1"]
+						}
+					}
+				},
+				{
+					"name": "Create Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Jane Smith\",\n    \"email\": \"jane@example.com\",\n    \"mobile_number\": \"+1234567890\",\n    \"address\": \"789 Employee St, City, Country\",\n    \"company\": 1,\n    \"department\": 1,\n    \"designation\": \"Software Engineer\",\n    \"workflow_state\": \"application_received\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/employees/create/",
+							"host": ["{{base_url}}"],
+							"path": ["employees", "create"]
+						}
+					}
+				},
+				{
+					"name": "Update Employee",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Updated Name\",\n    \"email\": \"updated@example.com\",\n    \"mobile_number\": \"+9876543210\",\n    \"address\": \"Updated Address\",\n    \"designation\": \"Senior Software Engineer\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/employees/1/update/",
+							"host": ["{{base_url}}"],
+							"path": ["employees", "1", "update"]
+						}
+					}
+				},
+				{
+					"name": "Delete Employee",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/employees/1/delete/",
+							"host": ["{{base_url}}"],
+							"path": ["employees", "1", "delete"]
+						}
+					}
+				},
+				{
+					"name": "Transition Employee State",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"new_state\": \"interview_scheduled\",\n    \"interview_date\": \"2024-12-15T10:00:00Z\",\n    \"notes\": \"Scheduled technical interview\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/employees/1/transition/",
+							"host": ["{{base_url}}"],
+							"path": ["employees", "1", "transition"]
+						}
+					}
+				},
+				{
+					"name": "Get Employee Workflow History",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/employees/1/workflow-history/",
+							"host": ["{{base_url}}"],
+							"path": ["employees", "1", "workflow-history"]
+						}
+					}
+				}
+			]
+		}
+	]
+}

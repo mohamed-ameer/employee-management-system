@@ -1,0 +1,118 @@
+{
+    "Employee Management System": "نظام إدارة الموظفين",
+    "DashboardTitle": "لوحة التحكم",
+    "Companies": "الشركات",
+    "Departments": "الأقسام",
+    "Employees": "الموظفون",
+    "Profile": "الملف الشخصي",
+    "Security": "الأمان",
+    "Settings": "الإعدادات",
+    "Logout": "تسجيل الخروج",
+    "Login": "تسجيل الدخول",
+    "Register": "تسجيل جديد",
+
+    "Company Management": {
+        "Create Company": "إنشاء شركة",
+        "Edit Company": "تعديل الشركة",
+        "Company Details": "تفاصيل الشركة",
+        "Company Name": "اسم الشركة",
+        "Number of Employees": "عدد الموظفين",
+        "Number of Departments": "عدد الأقسام"
+    },
+
+    "Department Management": {
+        "Create Department": "إنشاء قسم",
+        "Edit Department": "تعديل القسم",
+        "Department Details": "تفاصيل القسم",
+        "Department Name": "اسم القسم",
+        "Department Head": "رئيس القسم",
+        "Department Description": "وصف القسم",
+        "Select Company": "اختر الشركة",
+        "Number of Employees": "عدد الموظفين"
+    },
+
+    "Employee Management": {
+        "Create Employee": "إضافة موظف",
+        "Edit Employee": "تعديل بيانات الموظف",
+        "Employee Details": "تفاصيل الموظف",
+        "First Name": "الاسم الأول",
+        "Last Name": "اسم العائلة",
+        "Email": "البريد الإلكتروني",
+        "Phone": "رقم الهاتف",
+        "Position": "المنصب",
+        "Department": "القسم",
+        "Hire Date": "تاريخ التعيين",
+        "Salary": "الراتب",
+        "Status": "الحالة",
+        "Actions": "الإجراءات"
+    },
+
+    "User Management": {
+        "Profile Settings": "إعدادات الملف الشخصي",
+        "Security Settings": "إعدادات الأمان",
+        "Change Password": "تغيير كلمة المرور",
+        "Current Password": "كلمة المرور الحالية",
+        "New Password": "كلمة المرور الجديدة",
+        "Confirm Password": "تأكيد كلمة المرور",
+        "Two Factor Authentication": "المصادقة الثنائية",
+        "Enable 2FA": "تفعيل المصادقة الثنائية",
+        "Disable 2FA": "تعطيل المصادقة الثنائية",
+        "Verification Code": "رمز التحقق",
+        "Language": "اللغة",
+        "Theme": "المظهر",
+        "Time Zone": "المنطقة الزمنية"
+    },
+
+    "Dashboard": {
+        "Total Companies": "إجمالي الشركات",
+        "Total Departments": "إجمالي الأقسام",
+        "Total Employees": "إجمالي الموظفين",
+        "Recent Activities": "النشاطات الأخيرة",
+        "Quick Stats": "إحصائيات سريعة",
+        "Employee Distribution": "توزيع الموظفين",
+        "Department Overview": "نظرة عامة على الأقسام"
+    },
+
+    "Common": {
+        "Search": "بحث",
+        "Create": "إنشاء",
+        "Edit": "تعديل",
+        "Delete": "حذف",
+        "View": "عرض",
+        "Save": "حفظ",
+        "Cancel": "إلغاء",
+        "Back": "رجوع",
+        "Submit": "إرسال",
+        "Loading": "جاري التحميل...",
+        "No Data": "لا توجد بيانات",
+        "Success": "نجاح",
+        "Error": "خطأ",
+        "Confirm": "تأكيد",
+        "Yes": "نعم",
+        "No": "لا"
+    },
+
+    "Placeholders": {
+        "Enter first name": "أدخل الاسم الأول",
+        "Enter last name": "أدخل اسم العائلة",
+        "Enter email": "أدخل البريد الإلكتروني",
+        "Enter phone": "أدخل رقم الهاتف",
+        "Enter position": "أدخل المنصب",
+        "Enter salary": "أدخل الراتب",
+        "Select department": "اختر القسم",
+        "Enter company name": "أدخل اسم الشركة",
+        "Enter department name": "أدخل اسم القسم"
+    },
+
+    "Messages": {
+        "Created Successfully": "تم الإنشاء بنجاح",
+        "Updated Successfully": "تم التحديث بنجاح",
+        "Deleted Successfully": "تم الحذف بنجاح",
+        "Confirm Delete": "هل أنت متأكد من حذف هذا العنصر؟",
+        "Login Required": "الرجاء تسجيل الدخول للوصول إلى هذه الصفحة",
+        "Invalid Credentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+        "Password Mismatch": "كلمات المرور غير متطابقة",
+        "Required Field": "هذا الحقل مطلوب",
+        "Invalid Email": "الرجاء إدخال بريد إلكتروني صحيح"
+    }
+}

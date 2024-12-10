@@ -1,0 +1,118 @@
+{
+    "Employee Management System": "Employee Management System",
+    "DashboardTitle": "Dashboard",
+    "Companies": "Companies",
+    "Departments": "Departments",
+    "Employees": "Employees",
+    "Profile": "Profile",
+    "Security": "Security",
+    "Settings": "Settings",
+    "Logout": "Logout",
+    "Login": "Login",
+    "Register": "Register",
+
+    "Company Management": {
+        "Create Company": "Create Company",
+        "Edit Company": "Edit Company",
+        "Company Details": "Company Details",
+        "Company Name": "Company Name",
+        "Number of Employees": "Number of Employees",
+        "Number of Departments": "Number of Departments"
+    },
+
+    "Department Management": {
+        "Create Department": "Create Department",
+        "Edit Department": "Edit Department",
+        "Department Details": "Department Details",
+        "Department Name": "Department Name",
+        "Department Head": "Department Head",
+        "Department Description": "Department Description",
+        "Select Company": "Select Company",
+        "Number of Employees": "Number of Employees"
+    },
+
+    "Employee Management": {
+        "Create Employee": "Create Employee",
+        "Edit Employee": "Edit Employee",
+        "Employee Details": "Employee Details",
+        "First Name": "First Name",
+        "Last Name": "Last Name",
+        "Email": "Email",
+        "Phone": "Phone",
+        "Position": "Position",
+        "Department": "Department",
+        "Hire Date": "Hire Date",
+        "Salary": "Salary",
+        "Status": "Status",
+        "Actions": "Actions"
+    },
+
+    "User Management": {
+        "Profile Settings": "Profile Settings",
+        "Security Settings": "Security Settings",
+        "Change Password": "Change Password",
+        "Current Password": "Current Password",
+        "New Password": "New Password",
+        "Confirm Password": "Confirm Password",
+        "Two Factor Authentication": "Two Factor Authentication",
+        "Enable 2FA": "Enable Two Factor Authentication",
+        "Disable 2FA": "Disable Two Factor Authentication",
+        "Verification Code": "Verification Code",
+        "Language": "Language",
+        "Theme": "Theme",
+        "Time Zone": "Time Zone"
+    },
+
+    "Dashboard": {
+        "Total Companies": "Total Companies",
+        "Total Departments": "Total Departments",
+        "Total Employees": "Total Employees",
+        "Recent Activities": "Recent Activities",
+        "Quick Stats": "Quick Stats",
+        "Employee Distribution": "Employee Distribution",
+        "Department Overview": "Department Overview"
+    },
+
+    "Common": {
+        "Search": "Search",
+        "Create": "Create",
+        "Edit": "Edit",
+        "Delete": "Delete",
+        "View": "View",
+        "Save": "Save",
+        "Cancel": "Cancel",
+        "Back": "Back",
+        "Submit": "Submit",
+        "Loading": "Loading...",
+        "No Data": "No Data Available",
+        "Success": "Success",
+        "Error": "Error",
+        "Confirm": "Confirm",
+        "Yes": "Yes",
+        "No": "No"
+    },
+
+    "Placeholders": {
+        "Enter first name": "Enter first name",
+        "Enter last name": "Enter last name",
+        "Enter email": "Enter email",
+        "Enter phone": "Enter phone number",
+        "Enter position": "Enter position",
+        "Enter salary": "Enter salary",
+        "Select department": "Select department",
+        "Enter company name": "Enter company name",
+        "Enter department name": "Enter department name"
+    },
+
+    "Messages": {
+        "Created Successfully": "Created successfully",
+        "Updated Successfully": "Updated successfully",
+        "Deleted Successfully": "Deleted successfully",
+        "Confirm Delete": "Are you sure you want to delete this item?",
+        "Login Required": "Please login to access this page",
+        "Invalid Credentials": "Invalid email or password",
+        "Password Mismatch": "Passwords do not match",
+        "Required Field": "This field is required",
+        "Invalid Email": "Please enter a valid email address"
+    }
+}

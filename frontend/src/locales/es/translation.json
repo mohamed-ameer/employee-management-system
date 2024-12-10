@@ -1,0 +1,118 @@
+{
+    "Employee Management System": "Sistema de Gestión de Empleados",
+    "DashboardTitle": "Panel de Control",
+    "Companies": "Empresas",
+    "Departments": "Departamentos",
+    "Employees": "Empleados",
+    "Profile": "Perfil",
+    "Security": "Seguridad",
+    "Settings": "Configuración",
+    "Logout": "Cerrar Sesión",
+    "Login": "Iniciar Sesión",
+    "Register": "Registrarse",
+
+    "Company Management": {
+        "Create Company": "Crear Empresa",
+        "Edit Company": "Editar Empresa",
+        "Company Details": "Detalles de la Empresa",
+        "Company Name": "Nombre de la Empresa",
+        "Number of Employees": "Número de Empleados",
+        "Number of Departments": "Número de Departamentos"
+    },
+
+    "Department Management": {
+        "Create Department": "Crear Departamento",
+        "Edit Department": "Editar Departamento",
+        "Department Details": "Detalles del Departamento",
+        "Department Name": "Nombre del Departamento",
+        "Department Head": "Jefe de Departamento",
+        "Department Description": "Descripción del Departamento",
+        "Select Company": "Seleccionar Empresa",
+        "Number of Employees": "Número de Empleados"
+    },
+
+    "Employee Management": {
+        "Create Employee": "Crear Empleado",
+        "Edit Employee": "Editar Empleado",
+        "Employee Details": "Detalles del Empleado",
+        "First Name": "Nombre",
+        "Last Name": "Apellido",
+        "Email": "Correo Electrónico",
+        "Phone": "Teléfono",
+        "Position": "Cargo",
+        "Department": "Departamento",
+        "Hire Date": "Fecha de Contratación",
+        "Salary": "Salario",
+        "Status": "Estado",
+        "Actions": "Acciones"
+    },
+
+    "User Management": {
+        "Profile Settings": "Configuración del Perfil",
+        "Security Settings": "Configuración de Seguridad",
+        "Change Password": "Cambiar Contraseña",
+        "Current Password": "Contraseña Actual",
+        "New Password": "Nueva Contraseña",
+        "Confirm Password": "Confirmar Contraseña",
+        "Two Factor Authentication": "Autenticación de Dos Factores",
+        "Enable 2FA": "Activar Autenticación de Dos Factores",
+        "Disable 2FA": "Desactivar Autenticación de Dos Factores",
+        "Verification Code": "Código de Verificación",
+        "Language": "Idioma",
+        "Theme": "Tema",
+        "Time Zone": "Zona Horaria"
+    },
+
+    "Dashboard": {
+        "Total Companies": "Total de Empresas",
+        "Total Departments": "Total de Departamentos",
+        "Total Employees": "Total de Empleados",
+        "Recent Activities": "Actividades Recientes",
+        "Quick Stats": "Estadísticas Rápidas",
+        "Employee Distribution": "Distribución de Empleados",
+        "Department Overview": "Resumen de Departamentos"
+    },
+
+    "Common": {
+        "Search": "Buscar",
+        "Create": "Crear",
+        "Edit": "Editar",
+        "Delete": "Eliminar",
+        "View": "Ver",
+        "Save": "Guardar",
+        "Cancel": "Cancelar",
+        "Back": "Volver",
+        "Submit": "Enviar",
+        "Loading": "Cargando...",
+        "No Data": "No hay datos disponibles",
+        "Success": "Éxito",
+        "Error": "Error",
+        "Confirm": "Confirmar",
+        "Yes": "Sí",
+        "No": "No"
+    },
+
+    "Placeholders": {
+        "Enter first name": "Ingrese nombre",
+        "Enter last name": "Ingrese apellido",
+        "Enter email": "Ingrese correo electrónico",
+        "Enter phone": "Ingrese número de teléfono",
+        "Enter position": "Ingrese cargo",
+        "Enter salary": "Ingrese salario",
+        "Select department": "Seleccione departamento",
+        "Enter company name": "Ingrese nombre de la empresa",
+        "Enter department name": "Ingrese nombre del departamento"
+    },
+
+    "Messages": {
+        "Created Successfully": "Creado exitosamente",
+        "Updated Successfully": "Actualizado exitosamente",
+        "Deleted Successfully": "Eliminado exitosamente",
+        "Confirm Delete": "¿Está seguro de que desea eliminar este elemento?",
+        "Login Required": "Por favor inicie sesión para acceder a esta página",
+        "Invalid Credentials": "Correo electrónico o contraseña inválidos",
+        "Password Mismatch": "Las contraseñas no coinciden",
+        "Required Field": "Este campo es requerido",
+        "Invalid Email": "Por favor ingrese un correo electrónico válido"
+    }
+}
